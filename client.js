@@ -11,11 +11,10 @@ const connect = function () {
     conn.write('successfully connected to game server');
   });
   conn.on('connect', () => {
-    conn.write('Name:SNM');
+    conn.write('Name: SNM');
 
   });
 
-  
   conn.setEncoding('utf8');
 
   return conn;
