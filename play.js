@@ -16,7 +16,9 @@ const connect = function () {
   });
   conn.on('connect', () => {
     conn.write('Name:SNM');
+    
   });
+
   // interpret incoming data as text
   conn.setEncoding('utf8');
 
